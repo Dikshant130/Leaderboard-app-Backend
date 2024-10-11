@@ -5,7 +5,7 @@ const cors = require('cors');
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://${USERNAME}:${PASSWORD}@cluster0-portfolio.mkzhw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0-portfolio', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DBURL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const userSchema = new mongoose.Schema({
     userId: { type: String, required: true, unique: true },
