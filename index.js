@@ -20,7 +20,7 @@ const User = mongoose.model('User', userSchema);
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://leaderboard-application-website.netlify.app/']
+    origin: ['http://localhost:3000', 'https://leaderboard-application-website.netlify.app']
   }));
 
 // API endpoints
