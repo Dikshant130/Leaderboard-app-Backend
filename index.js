@@ -20,7 +20,7 @@ const User = mongoose.model('User', userSchema);
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'https://leaderboard-app-frontend.vercel.app'
+    origin: 'http://localhost:3000'
   }));
 
 // API endpoints
